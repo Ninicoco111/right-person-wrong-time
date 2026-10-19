@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Right Person, Wrong Time — The Power of Sequencing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="wordmark" href="#top">A Matter of <em>Time.</em></a>
+    <span>THREE IMAGES / TWO STORIES</span>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <p class="eyebrow">A SMALL STORY ABOUT TIMING</p>
+      <h1>Right person.<br><em>Wrong time?</em></h1>
+      <p>The same moments can tell a different story.<br>Change the order. See what changes in between.</p>
+    </section>
+
+    <section class="story" aria-labelledby="story-title">
+      <div class="sequence-controls" role="group" aria-label="Choose a sequence">
+        <button id="late-button" class="active" type="button" aria-pressed="true"><span>VERSION 01</span>Too Late</button>
+        <button id="time-button" type="button" aria-pressed="false"><span>VERSION 02</span>Just in Time</button>
+      </div>
+
+      <div class="story-heading">
+        <div><p class="eyebrow" id="sequence-label">SEQUENCE A → B → C</p><h2 id="story-title">Too Late</h2></div>
+        <p>READ LEFT TO RIGHT →<br>On a phone, read from top to bottom.</p>
+      </div>
+
+      <div class="frames">
+        <figure>
+          <div class="frame-label"><span>01</span><span>BEGINNING</span></div>
+          <img id="image-one" class="coffee-photo" src="images/coffee.jpg" alt="Two cups of coffee sitting on a cafe table" width="1500" height="2250">
+          <figcaption><span id="letter-one">A</span><h3 id="title-one">The Date</h3></figcaption>
+        </figure>
+        <figure>
+          <div class="frame-label"><span>02</span><span>MIDDLE</span></div>
+          <img id="image-two" src="images/watch.jpg" alt="A close view of a wristwatch on a person's arm" width="1500" height="1000">
+          <figcaption><span>B</span><h3>The Time</h3></figcaption>
+        </figure>
+        <figure>
+          <div class="frame-label"><span>03</span><span>END</span></div>
+          <img id="image-three" src="images/station.jpg" alt="An empty subway platform with no passengers" width="1500" height="2250">
+          <figcaption><span id="letter-three">C</span><h3 id="title-three">The Station</h3></figcaption>
+        </figure>
+      </div>
+
+      <div class="story-bottom"><p>Three photographs. Nothing added. Only reordered.</p><button id="reset-button" class="text-button" type="button">Start again ↺</button></div>
+      <p class="screen-reader" id="status" role="status"></p>
+    </section>
+
+    <section class="interpretation" aria-labelledby="reading-heading">
+      <div><p class="eyebrow">WHAT DID YOU SEE?</p><h2 id="reading-heading">A wait, or a beginning?</h2><p>Read the images first. Then explore one possible interpretation.</p></div>
+      <button id="reading-button" type="button" aria-expanded="false" aria-controls="reading">Show the interpretation +</button>
+      <div id="reading" class="reading" hidden><h3 id="reading-title">A missed connection.</h3><p id="reading-text"></p><p class="reading-note">The image titles stay the same in both versions. The interpretation comes from what we connect between them.</p></div>
+    </section>
+
+    <details class="credits">
+      <summary>Photographs & credits</summary>
+      <p>Three real photographs from Unsplash, reused unchanged in both sequences. They are presented here as a fictional story.</p>
+      <ul>
+        <li><strong>A · The Date</strong> — <a href="https://unsplash.com/photos/two-cups-of-coffee-sit-on-a-table-in-front-of-a-bookshelf-lr6qNsNFuDw" target="_blank" rel="noopener">Esra Afşar / Unsplash</a></li>
+        <li><strong>B · The Time</strong> — <a href="https://unsplash.com/photos/round-black-and-white-analog-watch-close-up-photography-P_rQ3UcfqrQ" target="_blank" rel="noopener">Sincerely Media / Unsplash</a></li>
+        <li><strong>C · The Station</strong> — <a href="https://unsplash.com/photos/an-empty-subway-station-with-no-people-on-the-platform-uGpNVCqgi_E" target="_blank" rel="noopener">Adrian Hernandez / Unsplash</a></li>
+      </ul>
+      <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash License ↗</a>
+    </details>
+  </main>
+
+  <footer><span>A photographic sequence by Nicole.</span><span>The Power of Sequencing</span></footer>
+</body>
+</html>
